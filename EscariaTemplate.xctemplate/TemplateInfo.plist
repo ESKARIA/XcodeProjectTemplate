@@ -31,6 +31,7 @@
 			<string>UILayer/BaseClasses/BaseInteractor/BaseInteractor.swift</string>
 			<string>UILayer/BaseClasses/BaseWireframe/BaseWireframe.swift</string>
 			<string>Assembly/DIResolver.swift</string>
+			<string>../Podfile</string>
 	</array>
 
 	<key>Definitions</key>
@@ -107,6 +108,25 @@ window?.makeKeyAndVisible()</string>
 	        <key>Path</key>
 	        <string>Assembly/DIResolver.swift</string>
 	    </dict>
+			<key>../Podfile</key>
+<dict>
+	<key>TargetIndices</key>
+	<array/>
+	<key>Beginning</key>
+	<string>source &apos;https://github.com/CocoaPods/Specs.git&apos;
+	platform :ios, &apos;11.0&apos;
+	target &apos;___PACKAGENAME___&apos; do
+pod &apos;SnapKit&apos;, &apos;~> 5.0.0&apos;
+	</string>
+	<key>End</key>
+	<string>
+end
+	</string>
+	<key>Group</key>
+	<array>
+		<string>Removable Resources</string>
+	</array>
+</dict>
 	</dict>
 </dict>
 </plist>
