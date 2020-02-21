@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.dmitriyToropkin.dt.unit.singleViewApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view. The App Delegate creates the main window and root view controller (no Storyboard).</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+	</array>
+
+	<key>Nodes</key>
+	<array>
+			<string>Modules/RootViewController/RootViewController.swift</string>
+			<string>UILayer/BaseClasses/BaseViewController/BaseViewController.swift</string>
+			<string>UILayer/BaseClasses/BasePresenter/BasePresenter.swift</string>
+			<string>UILayer/BaseClasses/BaseInteractor/BaseInteractor.swift</string>
+			<string>UILayer/BaseClasses/BaseWireframe/BaseWireframe.swift</string>
+			<string>Assembly/DIResolver.swift</string>
+	</array>
+
+	<key>Definitions</key>
+	<dict>
+	    <key>Modules/RootViewController/RootViewController.swift</key>
+	    <dict>
+	        <key>Group</key>
+	        <array>
+	            <string>Modules</string>
+							<string>RootViewController</string>
+	        </array>
+	        <key>Path</key>
+	        <string>Modules/RootViewController/RootViewController.swift</string>
+	    </dict>
+
+			<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+			<string>window = UIWindow(frame: UIScreen.main.bounds)
+window?.backgroundColor = .white
+window?.rootViewController = self.resolver.rootViewController()
+window?.makeKeyAndVisible()</string>
+			<key>AppDelegate.swift:implementation:properties</key>
+	 		<string>var resolver = DIResolver()</string>
+
+	    <key>UILayer/BaseClasses/BaseViewController/BaseViewController.swift</key>
+	    <dict>
+	        <key>Group</key>
+	        <array>
+	            <string>UILayer</string>
+							<string>BaseClasses</string>
+							<string>BaseViewController</string>
+	        </array>
+	        <key>Path</key>
+	        <string>UILayer/BaseClasses/BaseViewController/BaseViewController.swift</string>
+	    </dict>
+			<key>UILayer/BaseClasses/BasePresenter/BasePresenter.swift</key>
+			<dict>
+					<key>Group</key>
+					<array>
+						<string>UILayer</string>
+						<string>BaseClasses</string>
+						<string>BasePresenter</string>
+					</array>
+					<key>Path</key>
+					<string>UILayer/BaseClasses/BasePresenter/BasePresenter.swift</string>
+			</dict>
+			<key>UILayer/BaseClasses/BaseInteractor/BaseInteractor.swift</key>
+	    <dict>
+	        <key>Group</key>
+	        <array>
+						<string>UILayer</string>
+						<string>BaseClasses</string>
+						<string>BaseInteractor</string>
+	        </array>
+	        <key>Path</key>
+	        <string>UILayer/BaseClasses/BaseInteractor/BaseInteractor.swift</string>
+	    </dict>
+			<key>UILayer/BaseClasses/BaseWireframe/BaseWireframe.swift</key>
+	    <dict>
+	        <key>Group</key>
+	        <array>
+						<string>UILayer</string>
+						<string>BaseClasses</string>
+						<string>BaseWireframe</string>
+	        </array>
+	        <key>Path</key>
+	        <string>UILayer/BaseClasses/BaseWireframe/BaseWireframe.swift</string>
+	    </dict>
+	    <key>Assembly/DIResolver.swift</key>
+	    <dict>
+	        <key>Group</key>
+	        <array>
+	            <string>Assembly</string>
+	        </array>
+	        <key>Path</key>
+	        <string>Assembly/DIResolver.swift</string>
+	    </dict>
+	</dict>
+</dict>
+</plist>
