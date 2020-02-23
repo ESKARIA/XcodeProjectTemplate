@@ -8,4 +8,11 @@ class DIResolver { }
 
 // MARK: - DIResolverComponents
 
-extension DIResolver: DIResolverComponents { }
+extension DIResolver: DIResolverComponents {
+    
+    func rootViewController() -> RootViewController {
+        let controller = RootViewController(resolver: self)
+        return controller
+    }
+    
+}
