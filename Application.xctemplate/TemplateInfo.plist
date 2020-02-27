@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.eskaria.dt.unit.application</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.singleViewApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>ESKARIA Project template</string>
+	<key>Definitions</key>
+	<dict>
+		<key>../Podfile</key>
+		<string>platform :ios, &apos;11.0&apos;
+
+pod &apos;DevHelper&apos;, :git =&gt; &apos;https://github.com/emvakar/DevHelper.git&apos;
+pod &apos;Moya&apos;, :inhibit_warnings =&gt; true
+pod &apos;Crashlytics&apos;, :inhibit_warnings =&gt; true
+pod &apos;Fabric&apos;, :inhibit_warnings =&gt; true
+pod &apos;Firebase&apos;, :inhibit_warnings =&gt; true
+pod &apos;Firebase/Messaging&apos;, :inhibit_warnings =&gt; true
+pod &apos;Firebase/Performance&apos;, :inhibit_warnings =&gt; true
+pod &apos;R.swift&apos;, :inhibit_warnings =&gt; true
+pod &apos;RealmSwift&apos;, :inhibit_warnings =&gt; true</string>
+		<key>../README.md</key>
+		<dict>
+			<key>Path</key>
+			<string>README.md</string>
+		</dict>
+		<key>../Networking/NetworkRequestProvider.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>NetworkRequestProvider.swift</string>
+		</dict>
+		<key>../Networking/NetworkTokenRefresher.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>NetworkTokenRefresher.swift</string>
+		</dict>
+		<key>../UILayer/BaseClasses/BaseViewController.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>BaseViewController.swift</string>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>../Networking/NetworkRequestProvider.swift</string>
+		<string>../Networking/NetworkTokenRefresher.swift</string>
+		<string>../UILayer/BaseClasses/BaseViewController.swift</string>
+		<string>../Podfile</string>
+		<string>../README.md</string>
+	</array>
+</dict>
+</plist>
