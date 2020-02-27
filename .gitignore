@@ -57,6 +57,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+Application.xctemplate/
+Single View App.xctemplate
 
 ## Other
 *.moved-aside
